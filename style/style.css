@@ -17,3 +17,17 @@ button {
     transition: .4s;
     border-radius: 5px;
 }
+
+button:hover {
+    background-color: #102f5e;
+    color: #FFF;
+}
+
+button:hover > i {
+    color: #FFF;
+}
+
+button i {
+    color: #102f5e;
+    font-weight: bold;
+}
