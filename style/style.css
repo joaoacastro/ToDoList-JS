@@ -5,29 +5,49 @@ body {
 }
 
 button {
-    background-color: #fdfdfd;
-    color: #102f5e;
-    border: 2px solid #102f5e;
-    padding: .3rem .6rem;
-    cursor: pointer;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .4s;
-    border-radius: 5px;
+  background-color: #fdfdfd;
+  color: #102f5e;
+  border: 2px solid #102f5e;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border-radius: 5px;
 }
 
 button:hover {
-    background-color: #102f5e;
-    color: #FFF;
+  background-color: #102f5e;
+  color: #fff;
 }
 
 button:hover > i {
-    color: #FFF;
+  color: #fff;
 }
 
 button i {
-    color: #102f5e;
-    font-weight: bold;
+  color: #102f5e;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* toDo header */
+.todo-container {
+  max-width: 450px;
+  margin: 3rem auto 0;
+  background-color: #dddddd;
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 2px dotted #102f5e;
 }
