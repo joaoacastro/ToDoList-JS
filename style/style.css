@@ -45,9 +45,22 @@ select {
 /* toDo header */
 .todo-container {
   max-width: 450px;
-  margin: 3rem auto 0;
+  margin: 5rem auto 0;
   background-color: #dddddd;
   padding: 1.5rem;
   border-radius: 15px;
   border: 2px dotted #102f5e;
+}
+
+.todo-container header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Todo Form */
+#todo-form,
+#edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #CCC;
 }
