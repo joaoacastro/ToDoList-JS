@@ -130,6 +130,7 @@ select {
   padding: 1rem;
   border-bottom: 1px solid #ddd;
   transition: 0.3s;
+  border-radius: 5px;
 }
 
 .todo h3 {
