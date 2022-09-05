@@ -45,7 +45,7 @@ const toggleForms = () => {
 };
 
 const updateTodo = (text) => {
-  const todos = document.querySelectorAll("todo");
+  const todos = document.querySelectorAll(".todo");
   todos.forEach((todo) => {
     let todoTitle = todo.querySelector("h3");
 
@@ -88,7 +88,7 @@ document.addEventListener("click", (e) => {
     toggleForms();
 
     editInput.value = todoTitle;
-    oldInputValue.value = todoTitle;
+    oldInputValue = todoTitle;
   }
 });
 
