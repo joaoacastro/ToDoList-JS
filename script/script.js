@@ -5,6 +5,7 @@ const todoList = document.querySelector("#todo-list");
 const editForm = document.querySelector("#edit-form");
 const editInput = document.querySelector("#edit-input");
 const cancelEditBtn = document.querySelector("#cancel-edit-btn");
+const searchBar = document.querySelector("#searchBar");
 
 let oldInputValue;
 
@@ -39,6 +40,7 @@ const saveTodo = (text) => {
 };
 
 const toggleForms = () => {
+  searchBar.classList.toggle("hide");
   editForm.classList.toggle("hide");
   todoForm.classList.toggle("hide");
   todoList.classList.toggle("hide");
@@ -48,7 +50,7 @@ const updateTodo = (text) => {
   const todos = document.querySelectorAll(".todo");
   todos.forEach((todo) => {
     let todoTitle = todo.querySelector("h3");
-
+    
     if (todoTitle.innerText === oldInputValue) {
       todoTitle.innerText = text;
     }
@@ -86,7 +88,7 @@ document.addEventListener("click", (e) => {
 
   if (targetEl.classList.contains("edit-todo")) {
     toggleForms();
-
+    
     editInput.value = todoTitle;
     oldInputValue = todoTitle;
   }
