@@ -9,6 +9,7 @@
 <i>
 Thanks for visiting my project! 😁
 <br>
+<br>
 You can check out other projects I've developed here on my GitHub and contact me by the links below.
 <br>
 </i>
